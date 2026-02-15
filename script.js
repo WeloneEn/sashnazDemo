@@ -283,7 +283,7 @@
     keys.push(event.key.toLowerCase());
     if (keys.length > 5) keys.shift();
     if (keys.join("") === "tile") {
-      alert("🎨 Добро пожаловать в мир плитки! Бабиджон любит дизайн. 🎨");
+      alert("🎨 Добро пожаловать в мир плитки! Студия Александры Николаевой приветствует вас. 🎨");
       keys = [];
     }
   });
@@ -312,7 +312,7 @@
   window.addEventListener("load", () => {
     document.body.style.opacity = "1";
     const items = document.querySelectorAll(
-      ".nav, .title, .lead, .btn, .work-item, .testimonial, .work h2, .about h2, .contact h2, .testimonials h2, .footer, .hero-visual, .color-palette"
+      ".nav, .title, .lead, .btn, .work-item, .testimonial, .work h2, .about h2, .contact h2, .testimonials-page h2, .footer, .hero-visual, .color-palette"
     );
     items.forEach((item, index) => {
       item.style.opacity = "0";
@@ -560,7 +560,7 @@
       prev = next;
     }
 
-    // jump down after "О Сашуле"
+    // jump down after "О студии"
     const jumpX = prev.x + 26 * flip;
     const jumpY = prev.y + 88;
     runner.classList.add("is-jumping");
@@ -629,7 +629,13 @@
   // Page transitions for internal links
   document.querySelectorAll("a[href]").forEach((anchor) => {
     const href = anchor.getAttribute("href");
-    if (!href || href.startsWith("http") || href.startsWith("mailto:") || href.startsWith("#")) {
+    if (
+      !href ||
+      href.startsWith("http") ||
+      href.startsWith("mailto:") ||
+      href.startsWith("tel:") ||
+      href.startsWith("#")
+    ) {
       return;
     }
     anchor.addEventListener("click", (event) => {
@@ -675,11 +681,11 @@
       const message = String(data.get("message") || "").trim();
 
       if (!name || !email || !message) {
-        if (status) status.textContent = "Пожалуйста, заполните все поля.";
+        if (status) status.textContent = "Пожалуйста, заполните все поля формы.";
         return;
       }
 
-      if (status) status.textContent = "Отправка заявки...";
+      if (status) status.textContent = "Подготавливаю письмо...";
       const btn = form.querySelector('button[type="submit"]');
       if (btn) btn.style.animation = "pulse 0.5s infinite";
 
@@ -690,7 +696,7 @@
       setTimeout(() => {
         if (status) {
           status.textContent =
-            "Если письмо не открылось автоматически, используйте кнопку \"Открыть почту\".";
+            "Если письмо не открылось автоматически, нажмите кнопку \"Открыть почту\".";
         }
         if (btn) btn.style.animation = "";
       }, 600);

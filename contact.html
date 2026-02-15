@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Связаться — Бабиджон</title>
+  <title>Контакты — Студия Александры Николаевой</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="body-bg"></div>
   <header class="nav">
-    <div class="logo">Бабиджон</div>
+    <div class="logo">Александра Николаева</div>
     <nav>
       <a href="index.html">Главная</a>
       <a href="work.html">Портфолио</a>
-      <a href="about.html">О Сашуле</a>
+      <a href="about.html">О студии</a>
       <a href="testimonials.html">Отзывы</a>
       <a href="contact.html" class="active">Связаться</a>
     </nav>
@@ -22,31 +22,31 @@
 
   <main class="contact" style="padding-top:120px;">
     <h2>Связаться</h2>
-    <p>Хотите обсудить проект? Напишите мне, и я помогу подобрать лучшее решение для вашего интерьера.</p>
+    <p>Планируете обновление интерьера? Напишите мне, и мы подберём элегантное и практичное решение под ваш запрос.</p>
     <p>Адрес: г. Владивосток, ул. Батаршина, д. 5, кв. 275, 23 этаж.</p>
     <p>Выберите удобный способ связи:</p>
     <div class="contact-methods">
-      <a href="https://t.me/Welika_00" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
-      <a href="mailto:jadeloomwear@gmail.com" class="btn btn-ghost">Связаться по почте</a>
+      <a href="https://t.me/Welika_00" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Написать в Телеграм</a>
+      <a href="mailto:jadeloomwear@gmail.com" class="btn btn-ghost">Написать на почту</a>
       <button type="button" class="btn btn-ghost" id="show-phone">Показать номер телефона</button>
       <a href="tel:+79940057901" class="btn btn-primary contact-phone-link" id="phone-link" hidden>Позвонить: +7 994 005 79 01</a>
     </div>
 
     <form id="contact-form" class="contact-form" action="#" method="post">
       <label>Имя<div><input name="name" type="text" placeholder="Ваше имя" required></div></label>
-      <label>Email<div><input name="email" type="email" placeholder="you@domain.com" required></div></label>
-      <label>Сообщение<div><textarea name="message" rows="6" placeholder="Опишите ваш проект или вопрос по плитке" required></textarea></div></label>
+      <label>Email<div><input name="email" type="email" placeholder="example@mail.com" required></div></label>
+      <label>Сообщение<div><textarea name="message" rows="6" placeholder="Расскажите о вашем проекте: площадь, стиль, пожелания и сроки" required></textarea></div></label>
       <div class="form-row">
-        <button type="submit" class="btn btn-primary">Отправить заявку</button>
+        <button type="submit" class="btn btn-primary">Отправить запрос</button>
         <button type="button" id="mailto-fallback" class="btn btn-ghost">Открыть почту</button>
       </div>
       <div id="form-status" class="form-status" aria-live="polite"></div>
     </form>
 
-    <p>Я отвечаю в течение 24 часов. Срочные вопросы отправляйте через телефон.</p>
+    <p>Обычно отвечаю в течение 24 часов. По срочным вопросам удобнее связаться по телефону.</p>
   </main>
 
-  <footer class="footer">© Бабиджон — специалист по всему дизайну в мире</footer>
+  <footer class="footer">© Студия Александры Николаевой — премиальный дизайн плитки и санузлов</footer>
   <script src="script.js"></script>
 </body>
 </html>
