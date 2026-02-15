@@ -653,6 +653,15 @@
   });
 
   // Contact form behavior
+  const showPhoneBtn = document.getElementById("show-phone");
+  const phoneLink = document.getElementById("phone-link");
+  if (showPhoneBtn && phoneLink) {
+    showPhoneBtn.addEventListener("click", () => {
+      phoneLink.hidden = false;
+      showPhoneBtn.hidden = true;
+    });
+  }
+
   const form = document.getElementById("contact-form");
   if (form) {
     const status = document.getElementById("form-status");
@@ -681,7 +690,7 @@
       setTimeout(() => {
         if (status) {
           status.textContent =
-            "Если письмо не открылось автоматически, используйте кнопку \"Запасной mailto\".";
+            "Если письмо не открылось автоматически, используйте кнопку \"Открыть почту\".";
         }
         if (btn) btn.style.animation = "";
       }, 600);
