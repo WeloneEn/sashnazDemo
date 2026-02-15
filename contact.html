@@ -22,9 +22,7 @@
 
   <main class="contact" style="padding-top:120px;">
     <h2>Связаться</h2>
-    <p>Планируете обновление интерьера? Напишите мне, и мы подберём элегантное и практичное решение под ваш запрос.</p>
-    <p>Адрес: г. Владивосток, ул. Батаршина, д. 5, кв. 275, 23 этаж.</p>
-    <p>Выберите удобный способ связи:</p>
+    <p>Выберите удобный способ связи, и мы поможем вам с проектом в комфортном для вас формате.</p>
     <div class="contact-methods">
       <a href="https://t.me/Welika_00" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Написать в Телеграм</a>
       <a href="mailto:jadeloomwear@gmail.com" class="btn btn-ghost">Написать на почту</a>
@@ -32,18 +30,31 @@
       <a href="tel:+79940057901" class="btn btn-primary contact-phone-link" id="phone-link" hidden>Позвонить: +7 994 005 79 01</a>
     </div>
 
-    <form id="contact-form" class="contact-form" action="#" method="post">
-      <label>Имя<div><input name="name" type="text" placeholder="Ваше имя" required></div></label>
-      <label>Email<div><input name="email" type="email" placeholder="example@mail.com" required></div></label>
-      <label>Сообщение<div><textarea name="message" rows="6" placeholder="Расскажите о вашем проекте: площадь, стиль, пожелания и сроки" required></textarea></div></label>
-      <div class="form-row">
-        <button type="submit" class="btn btn-primary">Отправить запрос</button>
-        <button type="button" id="mailto-fallback" class="btn btn-ghost">Открыть почту</button>
-      </div>
-      <div id="form-status" class="form-status" aria-live="polite"></div>
-    </form>
+    <details class="contact-details">
+      <summary>Показать контактные данные</summary>
+      <p>Телефон: <a href="tel:+79940057901">+7 994 005 79 01</a></p>
+      <p>Почта: <a href="mailto:jadeloomwear@gmail.com">jadeloomwear@gmail.com</a></p>
+      <p>Телеграм: <a href="https://t.me/Welika_00" target="_blank" rel="noopener noreferrer">@Welika_00</a></p>
+      <p>Адрес: г. Владивосток, ул. Батаршина, д. 5, кв. 275, 23 этаж.</p>
+    </details>
 
-    <p>Обычно отвечаю в течение 24 часов. По срочным вопросам удобнее связаться по телефону.</p>
+    <div class="contact-faq">
+      <h3>Частые вопросы</h3>
+      <details>
+        <summary>С чего начинается работа над проектом?</summary>
+        <p>Мы начинаем с короткого брифа: задачи, стиль, сроки и желаемый уровень комплектации.</p>
+      </details>
+      <details>
+        <summary>Можно ли работать дистанционно?</summary>
+        <p>Да, мы ведём проекты дистанционно: онлайн-согласование, подбор материалов и сопровождение реализации.</p>
+      </details>
+      <details>
+        <summary>Что входит в сопровождение?</summary>
+        <p>Концепция, подбор материалов, спецификация и рекомендации для аккуратной реализации проекта.</p>
+      </details>
+    </div>
+
+    <p>Обычно отвечаем в течение 24 часов. По срочным вопросам удобнее связаться по телефону.</p>
   </main>
 
   <footer class="footer">© Студия Александры Николаевой — премиальный дизайн плитки и санузлов</footer>
